@@ -13,7 +13,7 @@ body{
     overflow:hidden;
   }
 
-  ul{
+  header .ul{
     margin:0;
     padding:0;
   }
@@ -72,7 +72,7 @@ header a:hover{
 
 #pagebanner{
     min-height:400px;
-    background:url('../assets/img/background.jpg') no-repeat 0 -450px;
+    background:url('../assets/img/background.jpg') no-repeat -100px -450px;
     text-align: center;
     color: #463388;
 }
