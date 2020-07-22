@@ -13,6 +13,90 @@ body{
     overflow:hidden;
   }
 
+  .containerToDo .styling{
+      color:#F48FB1;
+  }
+
+  .containerToDo .inputDiv{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.containerToDo .input{
+    padding: 5px 5px;
+    outline: none;
+    border: none;  
+    height: 30px;
+    border-radius: 20px;
+    width: 350px;
+    margin: 5px;
+    transition: .5s;
+    font-size: 20px;
+}
+
+.containerToDo .add{
+	outline: none;
+    border: none;
+    height: 50px;
+    border-radius: 25px;
+    width: 50px;
+    background-color: #F48FB1;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+    margin: 5px;
+}
+
+.containerToDo .add:hover{
+	opacity: 0.7;
+}
+
+.containerToDo{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.containerToDo .item{
+	padding: 10px;
+	border-bottom: 4px solid #463388;
+	margin-bottom: 1.5rem;
+}
+
+.containerToDo .item_input{
+	background: none;
+	outline: none;
+	border: none;
+	color: #463388;
+	font-size: 1.4rem;
+	width: 245px;
+}
+
+.containerToDo .edit{
+	background: none;
+	outline: none;
+	border: none;
+	color: #F48FB1;
+	font-size: 1.4rem;
+	font-family: 'Hind', sans-serif;
+	margin: 0 0.5rem;
+	cursor: pointer;
+}
+
+.containerToDo .remove{
+	background: none;
+	outline: none;
+	border: none;
+	color: #E00;
+	font-size: 1.4rem;
+	font-family: 'Hind', sans-serif;
+	cursor: pointer;
+}
+
   header .ul{
     margin:0;
     padding:0;
@@ -72,7 +156,7 @@ header a:hover{
 
 #pagebanner{
     min-height:400px;
-    background:url('../assets/img/background.jpg') no-repeat -100px -450px;
+    background:url('../assets/img/background.jpg') no-repeat 0 -450px;
     text-align: center;
     color: #463388;
 }
@@ -123,8 +207,6 @@ header a:hover{
     text-align: center;
     width:30%;
     padding:10px;
- 
-
 }
 
 #boxes .box img{
@@ -133,9 +215,40 @@ header a:hover{
 }
 
 footer{
-    padding:20px;
+    padding: 20px;
     margin-top: 20px;
     background-color: #463388;
     text-align: center;
     color: #F8BBD0;
+}
+
+@media(max-width: 768px){
+    header #branding, 
+    header nav,
+    header nav li,
+    #notifications h1,
+    #notifications form,
+    #boxes .box{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header{
+        padding-bottom: 20px;
+    }
+
+    #pagebanner h1{
+        margin-top: 40px;
+    }
+    
+    #notifications button{
+        display: block;
+        width: 100%;
+    }
+
+    #notifications form input[type="email"]{
+        width: 100%;
+        margin-buttom: 5px;
+    }
 }
